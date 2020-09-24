@@ -15,10 +15,10 @@ import static com.gfi.world.automation.utils.DriverFactory.createDriver;
 public enum Browsers {
   FF_LINUX("webdriver.gecko.driver", "/geckodriver_linux"),
   FF_MAC("webdriver.gecko.driver", "/geckodriver_mac"),
-  FF_WINDOWS("webdriver.gecko.driver", "\\geckodriver_win.exe"),
+  FF_WINDOWS("webdriver.gecko.driver", "/geckodriver_win.exe"),
   CHROME_LINUX("webdriver.chrome.driver", "/chromedriver_linux"),
   CHROME_MAC("webdriver.chrome.driver", "/chromedriver_mac"),
-  CHROME_WINDOWS("webdriver.chrome.driver", "\\chromedriver_win.exe");
+  CHROME_WINDOWS("webdriver.chrome.driver", "/chromedriver_win.exe");
 
   public static WebDriver webDriver;
   private final String browserType;
