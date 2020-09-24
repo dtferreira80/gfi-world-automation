@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
     features = {"src/test/resources"},
     glue = {"com.gfi.world.automation.stepDefinitions"},
     plugin = {"io.qameta.allure.cucumberjvm.AllureCucumberJvm"},
-    tags = {"not @notImplemented"})
+    tags = {"~@notImplemented"})
 public class CucumberRunnerTest {
 
   @BeforeClass
