@@ -75,7 +75,8 @@ Antes de rodar os testes sigam os passos abaixo:
 - Inserir dados válidos
 
 ###### Nota¹: seguir o exemplo do arquivo: `config.properties.example`
-Exemplo dos dados abaixo:
+
+> exemplo dos dados abaixo:
 
 ```
 BASE_URL=https://com.gfi.com.gfi.world/pt-pt
@@ -102,27 +103,31 @@ $ mvn test -DCucumber.options="--tags '@exemplo'"
 
 > rodar os testes via IDE (IntelliJ)
 
-Clicar com o botão direito no projeto/class **gfi.world-automation > Run 'AllTests'** ou **CTRL+F5**
+Clicar com o botão direito no projeto/class **gfi-world-automation > Run 'AllTests'** ou **CTRL+F5**
 
 ## Report
 Após a etapa de testes, será criada uma pasta chamada `allure-results` e diversos arquivos **.json** dentro.
-Para visualizarmos o "**report**" com as métricas de testes do **Allure**, devemos baixar o `allure command line tool` para facilitar.
+Para visualizarmos o "**report**" com as métricas de testes do **Allure**, temos duas opções:
 
-- [Allure command line](https://github.com/etki/allure-cli)
+1 - rodar através do plugin do maven para o allure e subir para o servidor: `mvn allure:serve`
+
+> exemplo_com_plugin_maven_allure:
+```
+mvn clean test
+mvn allure:serve
+```
+
+2 - baixar o `allure command line tool`.
+
+[Allure command line](https://github.com/etki/allure-cli)
 
 Depois de baixado, basta usarmos o comando: `allure serve allure-results` e vermos o servidor do **Allure** subindo com as métricas.
 
-###### Nota³:
-Os arquivos **.json** são gerados sempre que algum teste é rodado.
-
-Então, para não metrificar os testes desnecessários, basta rodarmos o comando `mvn clean` antes de qualquer comando.
-
-Exemplo:
+> exemplo_com_allure_command_line:
 ```
-mvn clean test-compile -Dit.test=AllRegressionIT verify -DskipUTs=true
+mvn clean test
 allure serve allure-results
 ```
-O reporte do Allure subira-a automaticamente.
 
 --- 
 
