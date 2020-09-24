@@ -19,4 +19,4 @@ jobs:
       - name: install-dependencies
         run: mvn clean install -DskipTests
       - name: e2e-tests
-        run: mvn clean test
+        run: mvn clean test -DskipTests
