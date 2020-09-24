@@ -9,12 +9,12 @@ Repositório para testes automáticos para WEB.
 
 ##### status:
 
-![TEST CI/CD](https://github.com/uLucasFraga/gfi-world-automation/workflows/TEST%20CI/CD/badge.svg)
+![TEST CI/CD](https://github.com/dtferreira80/gfi-world-automation/workflows/TEST%20CI/CD/badge.svg)
 
 
 ## Índice sobre o projeto:
 
-> Índice [README:](https://github.com/uLucasFraga/gfi-world-automation/blob/master/README.md)
+> Índice [README:](https://github.com/dtferreira80/gfi-world-automation/blob/master/README.md)
 
 - [Pre-requisitos](#pre-requisitos)
 - [Configuração](#configuração)
@@ -53,7 +53,7 @@ Criar um projeto _maven_ ou usar o arquivo _pom.xml_ para fazer o download/insta
 
 - Clonar esse repositório localmente usando http ou ssh, por exemplo:
 
-`git clone https://github.com/uLucasFraga/gfi-world-automation.git`
+`git clone https://github.com/dtferreira80/gfi-world-automation.git`
 
 - Limpar e instalar todas as dependências (pom.xml):
 
