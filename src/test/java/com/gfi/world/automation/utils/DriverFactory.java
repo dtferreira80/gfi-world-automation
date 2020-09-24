@@ -11,13 +11,16 @@ public class DriverFactory {
   public static WebDriver createDriver(String mvnParameter) {
     if (mvnParameter == null) {
       System.setProperty(
-          Browsers.CHROME_LINUX.getBrowserType(),
-          OperationSystems.LINUX_OS_X
+          Browsers.CHROME_WINDOWS.getBrowserType(),
+          OperationSystems.WINDOWS_OS_X
               .getDriversPath()
-              .concat(Browsers.CHROME_LINUX.getExecutable()));
+              .concat(Browsers.CHROME_WINDOWS.getExecutable()));
       ChromeOptions options = new ChromeOptions();
       options.addArguments(
-          "--window-size=1920,1080", "--disable-gpu", "--headless", "--no-sandbox");
+          "--window-size=1920,1080",
+              "--disable-gpu",
+              "--headless",
+              "--no-sandbox");
       return new ChromeDriver(options);
     }
 

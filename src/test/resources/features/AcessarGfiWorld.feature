@@ -1,7 +1,7 @@
 #language: pt
 
 @exemplo
-Funcionalidade: Acessar o Gif World
+Funcionalidade: Acessar o Gfi World
   Como um QA
   Gostaria de automatizar o site gfi-world
   De acordo com a etapa sugerida pelo processo seletivo
