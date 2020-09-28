@@ -19,7 +19,7 @@ public class DriverFactory {
       options.addArguments(
           "--window-size=1920,1080",
               "--disable-gpu",
-              "--headless",
+              //"--headless",
               "--no-sandbox");
       return new ChromeDriver(options);
     }
